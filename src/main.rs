@@ -22,11 +22,16 @@ enum ErrorType {
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let name = env!("CARGO_PKG_NAME");
+    let version = env!("CARGO_PKG_VERSION");
+    let authors = env!("CARGO_PKG_AUTHORS");
+    let description = env!("CARGO_PKG_DESCRIPTION");
+
     // Parse CLI arguments
-    let matches = Command::new("Proto vs JSON Validator")
-        .version("0.1.0")
-        .author("Onn Khairuddin")
-        .about("Validates JSON against a Protobuf schema")
+    let matches = Command::new(name)
+        .version(version)
+        .author(authors)
+        .about(description)
         .arg(
             Arg::new("proto")
                 .short('p')

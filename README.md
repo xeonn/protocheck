@@ -46,35 +46,18 @@ Key features include:
 
 ## Installation
 
-### Prerequisites
+### Prebuilt Binaries
+You can download the latest release from the [Releases](https://github.com/xeonn/protocheck/releases) page.
 
-- Rust 1.60 or higher
-- Cargo (Rust's package manager)
+**Note:** Due to changes in our release pipeline, macOS binaries are not provided. We currently support:
+- Linux (AMD64)
+- Windows (AMD64)
 
-### Steps
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/xeonn/protocheck.git
-   cd protocheck
-   ```
-
-2. Build the project:
-   ```bash
-   cargo build --release
-   ```
-
-3. Run the binary:
-   ```bash
-   ./target/release/protocheck --help
-   ```
-
-Alternatively, install the tool globally using `cargo`:
-```bash
-cargo install --path .
+### Build from Source
+To build from source, ensure you have Rust installed:
+```sh
+cargo build --release
 ```
-
----
 
 ## Usage
 

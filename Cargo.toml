@@ -2,6 +2,10 @@
 name = "protocheck"
 version = "0.1.0"
 edition = "2021"
+authors = ["Onn Khairuddin"]
+description = """
+Proto vs JSON Validator
+"""
 
 [dependencies]
 clap = { version = "4.5.30", features = ["derive"] }
