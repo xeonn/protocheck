@@ -9,7 +9,6 @@ Proto vs JSON Validator
 
 [dependencies]
 clap = { version = "4.5.30", features = ["derive"] }
-prost-build = "0.13.5"
 protobuf = "3.7.1"
 protobuf-parse = "3.7.1"
 serde = { version = "1.0.217", features = ["derive"] }
